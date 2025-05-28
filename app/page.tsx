@@ -401,7 +401,7 @@ export default function Home() {
                   <ul className="space-y-2 text-zinc-400">
                     <li className="flex items-start gap-2">
                       <span className="text-pink-500 mt-1">•</span>
-                      <span>Create a public GitHub repository</span>
+                      <span>Create a private GitHub repository</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-pink-500 mt-1">•</span>
