@@ -82,7 +82,7 @@ export default function Home() {
             <div className="inline-block rounded-full bg-zinc-900 p-2 mb-4">
               <RocketIcon className="h-6 w-6 text-purple-500" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Competition Overview</h2>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Round 2 Overview</h2>
             <p className="text-zinc-400 max-w-3xl">
               DataVista is a space data challenge where you build applications to solve real space industry problems
               using publicly available data and free APIs.
