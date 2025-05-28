@@ -14,9 +14,14 @@ export function Nav() {
           <Link href="/">
             <Button variant="ghost" size="sm">Home</Button>
           </Link>
+
+          <Link href="https://shorturl.at/3Foo5" target="_blank">
+            <Button variant="ghost" size="sm">Round 1</Button>
+          </Link>
           <Link href="/resources">
             <Button variant="ghost" size="sm">Resources</Button>
           </Link>
+
           <Link href="https://forms.gle/Wx4SxTFbbKZhATbG8" target="_blank">
             <Button size="sm" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
               Submit
