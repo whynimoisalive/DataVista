@@ -33,15 +33,17 @@ export default function Home() {
             </p>
           </div>
 
+        
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full px-8"
-              onClick={handleLearnMoreClick}
-            >
-              Learn More
-              <ChevronRight className="ml-2 h-4 w-4" />
-            </Button>
+            <Link href="/resources">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-full px-8"
+              >
+                View Resources
+                <ChevronRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
             <Button
               size="lg"
               variant="outline"
@@ -244,6 +246,15 @@ export default function Home() {
               </CardContent>
               <CardFooter>
 
+              </CardFooter>
+              // In the Tracks Section (around line 140-170), update each CardFooter:
+              <CardFooter>
+                <Link href="/resources?track=1">
+                  <Button variant="ghost" className="text-blue-400 hover:text-blue-300 p-0">
+                    View resources
+                    <ChevronRight className="ml-1 h-4 w-4" />
+                  </Button>
+                </Link>
               </CardFooter>
             </Card>
           </div>
