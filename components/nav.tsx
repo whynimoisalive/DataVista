@@ -1,6 +1,12 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { RocketIcon } from "lucide-react"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 export function Nav() {
   return (
@@ -15,12 +21,31 @@ export function Nav() {
             <Button variant="ghost" size="sm">Home</Button>
           </Link>
 
-          <Link href="https://shorturl.at/3Foo5" target="_blank">
-            <Button variant="ghost" size="sm">Round 1</Button>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" size="sm">Rounds</Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuItem asChild>
+                <Link href="https://shorturl.at/3Foo5" target="_blank">
+                  Round 1
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="https://forms.gle/Wx4SxTFbbKZhATbG8" target="_blank">
+                  Round 2
+                </Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+
+          <Link href="/timeline">
+            <Button variant="ghost" size="sm">Timeline</Button>
           </Link>
           <Link href="/resources">
             <Button variant="ghost" size="sm">Resources</Button>
           </Link>
+
 
           <Link href="https://forms.gle/Wx4SxTFbbKZhATbG8" target="_blank">
             <Button size="sm" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
