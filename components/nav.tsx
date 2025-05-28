@@ -9,21 +9,30 @@ import {
 } from "@/components/ui/dropdown-menu"
 
 export function Nav() {
+  const navButtonClassName =
+    "text-slate-300 hover:text-slate-100 hover:bg-slate-700/70 focus-visible:bg-slate-700/70 focus-visible:text-slate-100 focus-visible:ring-2 focus-visible:ring-purple-500 focus-visible:ring-offset-2 focus-visible:ring-offset-black transition-colors duration-150"
+
   return (
-    <nav className="fixed top-0 w-full z-50 bg-black/50 backdrop-blur-md border-b border-zinc-800">
+    <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-lg border-b border-neutral-800/50 shadow-lg">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
-          <RocketIcon className="h-6 w-6 text-purple-500" />
-          <span className="font-bold text-xl">DataVista 2025</span>
+        <Link href="/" className="flex items-center gap-2 group">
+          <RocketIcon className="h-6 w-6 text-purple-600 group-hover:rotate-[15deg] group-hover:scale-110 transition-all duration-300" />
+          <span className="font-bold text-xl text-slate-100">
+            DataVista 2025
+          </span>
         </Link>
-        <div className="flex gap-4">
+        <div className="flex items-center gap-2 md:gap-4">
           <Link href="/">
-            <Button variant="ghost" size="sm">Home</Button>
+            <Button variant="ghost" size="sm" className={navButtonClassName}>
+              Home
+            </Button>
           </Link>
 
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="sm">Rounds</Button>
+              <Button variant="ghost" size="sm" className={navButtonClassName}>
+                Rounds
+              </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem asChild>
@@ -40,15 +49,26 @@ export function Nav() {
           </DropdownMenu>
 
           <Link href="/timeline">
-            <Button variant="ghost" size="sm">Timeline</Button>
+            <Button variant="ghost" size="sm" className={navButtonClassName}>
+              Timeline
+            </Button>
           </Link>
           <Link href="/resources">
-            <Button variant="ghost" size="sm">Resources</Button>
+            <Button variant="ghost" size="sm" className={navButtonClassName}>
+              Resources
+            </Button>
+          </Link>
+          <Link href="/grading">
+            <Button variant="ghost" size="sm" className={navButtonClassName}>
+              Grading
+            </Button>
           </Link>
 
-
           <Link href="https://forms.gle/Wx4SxTFbbKZhATbG8" target="_blank">
-            <Button size="sm" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+            <Button
+              size="sm"
+              className="bg-purple-600 hover:bg-purple-500 text-slate-50 font-semibold shadow-md hover:shadow-lg shadow-purple-500/30 hover:shadow-purple-500/40 transition-all duration-300 ease-in-out transform hover:scale-105"
+            >
               Submit
             </Button>
           </Link>

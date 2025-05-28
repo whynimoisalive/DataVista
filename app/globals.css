@@ -27,34 +27,40 @@
   }
 
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
+    --background: 224 71% 4%; /* Very dark blue/black */
+    --foreground: 210 40% 98%; /* Off-white */
+    --card: 220 40% 8%; /* Dark gray/blue, slightly lighter than background */
+    --card-foreground: 210 40% 98%;
+    --popover: 224 71% 4%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%; /* Primary text color */
+    --primary-foreground: 224 71% 10%; /* Dark, for use on light primary backgrounds */
+    --secondary: 215 20% 65%; /* Medium gray for secondary text */
+    --secondary-foreground: 210 40% 98%; /* Secondary text on dark backgrounds */
+    --muted: 220 40% 15%; /* Darker gray for muted elements */
+    --muted-foreground: 215 20% 55%; /* Lighter muted gray text */
+    --accent: 210 90% 60%; /* Muted but clear blue for accents */
+    --accent-foreground: 210 40% 98%; /* Text on accent backgrounds */
+    --destructive: 0 72% 51%; /* Red */
     --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
+    --border: 220 40% 18%; /* Subtle border color */
+    --input: 220 40% 18%;
+    --ring: 210 90% 55%; /* Blue for focus rings */
   }
-}
 
-@layer base {
+  html {
+    overflow-y: scroll; /* Prevent layout shift when scrollbar appears/disappears */
+    width: 100%;
+    overflow-x: clip;
+  }
+
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
+    width: 100%;
+    overflow-x: clip;
   }
 }
 
