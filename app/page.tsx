@@ -247,7 +247,7 @@ export default function Home() {
               <CardFooter>
 
               </CardFooter>
-              // In the Tracks Section (around line 140-170), update each CardFooter:
+             
               <CardFooter>
                 <Link href="/resources?track=1">
                   <Button variant="ghost" className="text-blue-400 hover:text-blue-300 p-0">
