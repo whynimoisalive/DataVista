@@ -37,16 +37,16 @@ const timelineData = {
     },
     {
       title: "Phase 2.5: Networking Session and Bonus Round",
-      start: "9:00 AM, 5 Jun",
-      end: "12:00 PM, 5 Jun",
+      start: "9:00 AM, 6 Jun",
+      end: "12:00 PM, 6 Jun",
       location: "ICSR Room 3",
       description: "A surprise bonus round to test creativity and team synergy.",
       morseCode: "..-. ..- -. / . ...- . -. - / .-- .. - .... / . -..- -.-. .. - .. -. --. / .--. .-. .. --.. . ..."
     },
     {
       title: "Round 3: Dashboard Presentation & Q&A",
-      start: "3:00 PM, 6 Jun",
-      end: "5:30 PM, 6 Jun",
+      start: "3:00 PM, 7 Jun",
+      end: "5:30 PM, 7 Jun",
       location: "ICSR Room 3",
       description: "Teams present their final prototypes in person. Judges will conduct a debate-like Q&A to test the strength and reasoning of your approach."
     }
