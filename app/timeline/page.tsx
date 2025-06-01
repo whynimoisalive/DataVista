@@ -29,7 +29,7 @@ const timelineData = {
     {
       title: "Phase 2: Mission Dashboard",
       start: "3:00pm, 22 May",
-      end: "8:00 PM, 1 Jun",
+      end: "8:00 PM, 4 Jun (extended)",
       mode: "Online",
       description: "Present a clear problem statement and relevant data source (real or simulated), preferably tied to real-world use (e.g. ISRO planning, disaster response). Deliverables: PPT with team info, problem, data, methodology, visuals, prototype (video or website), and tech stack.",
       link: "https://rb.gy/9pufya",
